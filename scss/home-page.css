@@ -1,0 +1,75 @@
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.accordian-style {
+    width: 100%;
+    border-bottom: 1px solid #c2c7cf;
+    margin: 0%;
+    height: 3vh;
+}
+
+.padding-top {
+    padding-top: 2%;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 10px;
+    border-radius: 50%;
+    background: #f5a018;
+    cursor: pointer;
+}
+
+.margin-left {
+    margin-left: 1%;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f5a018;
+    cursor: pointer;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #c2c7cf;
+}
+
+.checked {
+    color: #ffff80;
+}

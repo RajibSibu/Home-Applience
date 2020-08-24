@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- css import -->
+    <link rel="stylesheet" href="../scss/home-page.css">
+    <link rel="stylesheet/css" type="text/css" href="" />
+    <title>Home Applience Web App</title>
+</head>
+
+<body style="overflow-x: hidden;">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/main-page.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Design section   -->
+    <!-- Nav Bar Section  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><span class="material-icons">
+            article
+          </span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SHOPE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MAGAZINE</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input style=" border: 0;outline: 0;background: transparent;border-bottom: 1px solid coral;" type="search"><span class="material-icons">
+                    search
+                    </span>
+                <span class="material-icons">
+                        shopping_cart
+                        </span>
+                <button class="btn" type="submit">Login</button>
+            </form>
+
+        </div>
+    </nav>
+    <span class="glyphicon glyphicon-search"></span>
+    <div class="row" style="overflow-x: hidden;">
+        <div class="col-3">
+            <div class="col-12" style="margin-left: 5%;opacity: 0.25;">
+                Filter By
+            </div>
+            <div class="col-sm-12 ">
+                <div class="border-bottom">
+                    <div data-toggle="collapse" href="#collection" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="col-sm-12">
+                            Collection
+                            <span class="material-icons padding-top" style="float: right;">
+                            keyboard_arrow_down
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collection">
+                    <div class="card card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="border-bottom">
+                    <div data-toggle="collapse" href="#color" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="col-sm-12">
+                            Color
+                            <span class="material-icons padding-top" style="float: right;">
+                            keyboard_arrow_down
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="color">
+                    <div class="card card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="border-bottom">
+                    <div data-toggle="collapse" href="#category" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="col-sm-12">
+                            Catogery
+                            <span class="material-icons padding-top " style="float: right;">
+                            keyboard_arrow_down
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="category">
+                    <div class="card card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="col-sm-12">
+                    Price Range
+                    <div class="slidecontainer ">
+                        <input type="range" min="1" max="100000000" value="1" class="slider" id="myRange"> <br/>
+                        <span>$</span><span id="demo"></span><span style="float: right;margin-right: 10%;">$10000+</span>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+
+                slider.oninput = function() {
+                    output.innerHTML = this.value;
+                }
+            </script>
+
+        </div>
+        <div class="col-9">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="../image/homeImage1.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div style="float: left">
+                                            <span>Combos
+
+                                        </span><br> Lounge
+                                            <br/>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div style="float: right">
+                                            <span>$2000</span> <br/>
+                                            <span class="material-icons">
+                                                    add_shopping_cart
+                                                    </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="../image/homeImage2.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div style="float: left">
+                                            <span>Combos
+
+                                        </span><br> Lounge
+                                            <br/>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div style="float: right">
+                                            <span>$2000</span> <br/>
+                                            <span class="material-icons">
+                                                    add_shopping_cart
+                                                    </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="../image/homeImage3.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div style="float: left">
+                                            <span>Combos
+
+                                        </span><br> Lounge
+                                            <br/>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div style="float: right">
+                                            <span>$2000</span> <br/>
+                                            <span class="material-icons">
+                                                    add_shopping_cart
+                                                    </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="../image/homeImage4.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div style="float: left">
+                                            <span>Combos
+
+                                        </span><br> Lounge
+                                            <br/>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div style="float: right">
+                                            <span>$2000</span> <br/>
+                                            <span class="material-icons">
+                                                    add_shopping_cart
+                                                    </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="../image/homeImage5.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div style="float: left">
+                                            <span>Combos
+
+                                        </span><br> Lounge
+                                            <br/>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div style="float: right">
+                                            <span>$2000</span> <br/>
+                                            <span class="material-icons">
+                                                    add_shopping_cart
+                                                    </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="../image/homeImage6.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div style="float: left">
+                                            <span>Combos
+
+                                        </span><br> Lounge
+                                            <br/>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div style="float: right">
+                                            <span>$2000</span> <br/>
+                                            <span class="material-icons">
+                                                    add_shopping_cart
+                                                    </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="../image/homeImage7.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div style="float: left">
+                                            <span>Combos
+
+                                        </span><br> Lounge
+                                            <br/>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div style="float: right">
+                                            <span>$2000</span> <br/>
+                                            <span class="material-icons">
+                                                    add_shopping_cart
+                                                    </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="../image/homeImage8.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div style="float: left">
+                                            <span>Combos
+
+                                        </span><br> Lounge
+                                            <br/>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div style="float: right">
+                                            <span>$2000</span> <br/>
+                                            <span class="material-icons">
+                                                    add_shopping_cart
+                                                    </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="../image/homeImage9.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div style="float: left">
+                                            <span>Combos
+
+                                        </span><br> Lounge
+                                            <br/>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div style="float: right">
+                                            <span>$2000</span> <br/>
+                                            <span class="material-icons">
+                                                    add_shopping_cart
+                                                    </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
